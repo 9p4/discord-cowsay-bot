@@ -2,7 +2,6 @@ aiohttp==3.6.3
 async-timeout==3.0.1
 attrs==20.3.0
 chardet==3.0.4
-cowsay==3.0
 discord.py==1.5.1
 dotfiles==0.6.4
 idna==3.0
