@@ -1,8 +1,7 @@
 version: '3'
 services:
   bot:
-    build: .
-    command: python ./discord-cowsay.py
+    image: sambhavsaggi/cowsay-py
     environment:
       PREFIX: '?'
       TOKEN: 'put-your-token-here'
