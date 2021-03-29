@@ -1,5 +1,5 @@
 # set base image (host OS)
-FROM python:3.9
+FROM python:3.9.2-slim-buster
 
 # set the working directory in the container
 WORKDIR /code
@@ -8,7 +8,7 @@ WORKDIR /code
 COPY requirements.txt .
 
 # install dependencies
-RUN pip install -r requirements.txt
+RUN apt-get update && apt-get install -y build-essential && pip install -r requirements.txt && apt-get remove -y build-essential && apt-get -y autoremove
 
 # copy the required files to the working directory
 COPY discord-cowsay.py .
