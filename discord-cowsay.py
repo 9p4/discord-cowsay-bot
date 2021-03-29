@@ -27,7 +27,7 @@ async def on_ready():
     print('------')
 
 @bot.command()
-async def beavis(ctx, *text):
+async def beavis(ctx, *, text):
     await ctx.send('```' + cowsay.beavis(text) + '```')
 
 @bot.command()
