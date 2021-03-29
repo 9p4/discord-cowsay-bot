@@ -1,6 +1,8 @@
 # set base image (host OS)
 FROM python:3.9.2-slim-buster
 
+LABEL org.opencontainers.image.source=https://github.com/sambhavsaggi/discord-cowsay-bot
+
 # set the working directory in the container
 WORKDIR /code
 
