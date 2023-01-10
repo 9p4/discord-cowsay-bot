@@ -1,7 +1,7 @@
 version: '3'
 services:
   bot:
-    image: ghcr.io/sambhavsaggi/discord-cowsay-bot
+    image: ghcr.io/9p4/discord-cowsay-bot
     environment:
       PREFIX: '?'
       TOKEN: 'put-your-token-here'
